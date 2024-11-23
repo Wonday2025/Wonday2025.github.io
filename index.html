@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Réclamation</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--   évite d'afficher un mess d'erreur ds console sous firefox -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Permanent+Marker&display=swap"
+        rel="stylesheet" />
+</head>
+
+
+
+
+<body>
+    <div class="header">
+        <img src="./Wonday_Logo (002).png" alt="logo Wonday" class="logo">
+        <h1>Formulaire de Réclamation</h1>
+        <img src="./iso.png" alt="isotype" class="iso">
+    </div>
+
+
+    <br><br><br><br>
+
+
+    <main>
+
+        <br>
+        <form id="reclamationForm" action="example.html" method="post">
+
+            <div id="upper-paragraph">
+                <p style="font-size: 1.7rem;">
+
+                    Chèr(e) client(e),
+                    <br><br>
+                    Vous souhaitez ouvrir une réclamation auprès de nos
+                    services. Pour traiter votre demande au plus vite, nous vous
+                    prions de bien vouloir compléter ce document et de nous le transmettre en le validant en bas de
+                    page.
+                </p>
+            </div>
+            <br><br><br><br>
+
+
+
+
+            <div class="container-info">
+                <div class="form1">
+
+                    <h2>1. <u> Informations Client</u> :</h2> <br>
+                    <label for="companyName">Nom de l’entreprise / Code client :</label>
+                    <input type="text" id="companyName" name="companyName" required />
+
+                    <label for="siret">Siret (entreprises basées en France) :</label>
+                    <input type="text" id="siret" name="siret" />
+
+
+
+                    <label for="address">Adresse :</label>
+                    <input type="text" id="address" name="address" required />
+
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone" pattern="^\+?[0-9]{10}$" />
+
+                    <label for="email">Mail :</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+
+
+                <br>
+
+
+                <div class="form2">
+                    <h2>2. <u>Produit(s) Concerné(s)</u> :</h2> <br>
+
+
+                    <label for="invoiceNumber">N° de facture et/ou bon de livraison Wonday :</label>
+                    <input type="text" id="invoiceNumber" name="invoiceNumber" required />
+
+
+                    <label for="orderReference">Référence commande :</label>
+                    <input type="text" id="orderReference" name="orderReference" required />
+
+
+                    <label for="purchaseDate">Date d’achat :</label>
+                    <input type="date" id="purchaseDate" name="purchaseDate" required />
+
+                </div>
+
+
+            </div>
+
+            <br><br><br><br>
+
+
+            <p style="font-size: 1.7rem;">Veuillez également compléter les champs suivants :</p>
+
+            <br>
+
+
+
+
+            <div class="product-table">
+
+                <table id="productTable">
+                    <thead>
+                        <tr>
+                            <th>Référence Article / Désignation</th>
+                            <th>Quantité</th>
+                            <th>Remarques</th>
+
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="reference[]" required /></td>
+                            <td><input type="number" name="quantity[]" required /></td>
+                            <td><input type="text" name="remarks[]" /></td>
+                        </tr>
+                    </tbody>
+
+                </table> <br>
+
+
+                <!--  <button type="button-supprimer" onclick="addRow()">Ajouter un article</button> -->
+                <button type="button" onclick="addRow()">Ajouter un article</button>
+
+
+
+            </div>
+            <br><br><br><br>
+
+
+
+            <section>
+                <div class="form3">
+                    <h2>3.<u>Type de Réclamation (Cochez la case qui correspond)</u></h2> <br>
+                    <label><input type="checkbox" name="reclamationType" value="defective" />
+                        Défectueux / Qualité. *</label>
+                    <label><input type="checkbox" name="reclamationType" value="missing" />
+                        Manquant.</label>
+                    <label><input type="checkbox" name="reclamationType" value="priceDifference" />
+                        Différence de prix.</label>
+                    <label><input type="checkbox" name="reclamationType" value="wrongItem" />
+                        Article non commandé.</label>
+                    <label><input type="checkbox" name="reclamationType" value="shippingCost" />
+                        Frais de port.</label>
+                    <label><input type="checkbox" name="reclamationType" value="deliveryIssue" />
+                        Problème de livraison - Défaut de transport.</label>
+                    <label><input type="checkbox" name="reclamationType" value="unboxingIssue" />
+                        Problème de livraison - Panne au déballage. *</label>
+
+
+
+
+                </div>
+            </section>
+
+
+            <section id="additionalFieldsSection" style="display: none;">
+                <!-- fait apparaitre le formulaire spécifique si case avec * cochée -->
+
+                <div class="info_sup">
+                    <p style='font-size: larger;'><b> * Vous avez coché défectueux et/ou panne au déballage, nous vous
+                            remercions
+                            de
+                            compléter les champs suivants : </b></p>
+                    <label for="lotNumber">N° de lot :</label>
+                    <input type="text" id="lotNumber" name="lotNumber" class="additional-fields">
+
+                    <label for="approNumber">N° appro. :</label>
+                    <input type="text" id="approNumber" name="approNumber" class="additional-fields">
+
+                    <label for="serialNumber">N° de série (pour les coffres) :</label>
+                    <input type="text" id="serialNumber" name="serialNumber" class="additional-fields">
+
+                    <label for="finalInvoice">N° facture client:</label>
+                    <input type="text" id="finalInvoice" name="finalInvoice" class="additional-fields">
+
+
+                </div>
+                <br><br><br><br>
+
+     
+
+            </section>
+
+
+
+
+            <div class="text_f">
+                <p>
+                    Veuillez joindre au formulaire les éléments suivants: photos et preuves émargées, annotées, des
+                    défauts constatés:
+                <p>- photo(s) avec référence du produit concerné plus descriptif de
+                    l'endroit abimé. </p>
+                <p>- si refus de la livraison, photo et annotation, descriptif, de
+                    l'endroit abimé.</p> <br>
+
+                <div id="uploadSection">
+                    <label for="fileInput"><u>Téléchargez un fichier</u> :</label>
+                    <input type="file" id="fileInput" name="file">
+                  
+                    <p id="uploadStatus"></p>
+                </div>
+                </p> <br>
+                <p style="font-size: larger;"> <i> À noter que "sous réserves de déballage" n'est pas considéré comme un
+                        défaut
+                        de
+                        transport.</i></p>
+
+
+
+
+
+
+                <div class="warning">
+                    <p style="color:red;font-size: x-large;font-weight: bolder;"><br><u>ATTENTION:<br></u> </p>
+                    <p>Une notification de panne au déballage peut se faire par l'intermédiaire de ce formulaire dans un
+                        délai
+                        de
+                        24h
+                        après la réception du colis. Les déclarations de panne au déballage ne seront acceptées
+                        qu'accompagnées
+                        de la
+                        réserve émise auprès du transporteur.
+                    </p>
+                </div> <br>
+
+            </div>
+
+            <div class="rgpd">
+
+                <input type="checkbox" id="rgpdConsent" name="rgpdConsent" required>
+                <label for="rgpdConsent">J'accepte que mes données soient utilisées conformément à la<a
+                        href="lien-vers-politique-de-confidentialité" target="_blank">politique de
+                        confidentialité.</a></label> <br>
+                <button type="submit">Soumettre le formulaire</button>
+            </div>
+
+
+
+
+
+        </form>
+
+    </main>
+
+
+    <br><br><br>
+
+
+
+
+    <hr color="green">
+
+    <br><br><br><
+
+   
+   
+    <section class="savw">
+
+
+        <h2>SERVICE APRÈS-VENTE WONDAY</h2>
+
+        <p>
+            <!-- Tél : +33(0)4 73 51 78 20 / + 33(0)4 73 51 78 15 -->
+            <a href="http://www.reskal.com/sav" target="_blank">sav@reskal.com </a> / <a
+                href="https://www.wonday.com/service-client-sav/" style="color: #8ebf42"
+                target="_blank">sav@wonday.com</a>
+            /<a href="adv@wonday.com?subject=SAV" style="color: #8ebf42">contact@wonday.com</a>
+        </p>
+        <br>
+
+
+
+        <p>
+            Selon l’article L217-7 du Code de la consommation, tous nos produits ont une garantie légale de 2 ans. Tous
+            défauts de fabrication
+            et/ou d’utilisation survenant dans les 24 mois à partir de la délivrance du produit seront présumés exister
+            au
+            moment de la
+            délivrance sauf preuve du contraire. Passé ce délai, l’action résultant du défaut de conformité se
+            prescrit.<br>
+            Cette garantie couvre les produits contre tout vice caché provenant d’un défaut de matière, de conception,
+            ou de
+            fabrication
+            affectant les produits et les rendant impropres à l’utilisation.<br>
+            La garantie légale s’applique indépendamment de la garantie commerciale éventuellement consentie. Cette
+            garantie
+            est
+            contractuelle et ses conditions sont spécifiées selon le produit. La preuve d’achat vaut certificat de
+            garantie.<br><br>
+            Toute garantie est exclue en cas de mauvaise utilisation, négligence ou défaut d’entretien de la part du
+            client,
+            ou en cas d’usure
+            anormale du produit. Elle est également exclue en cas d’environnement non conforme aux données
+            constructeurs.<br>
+            Toute garantie sera exclue en cas d’intervention d’un SAV ou technicien indépendant de notre Société.<br>
+            En cas de déclenchement de la garantie légale ou commerciale, les frais de retour seront pris en charge par
+            WONDAY. </p><br>
+
+        <p style="color:red;font-size: x-large;font-weight: bolder;"><br><u>ATTENTION:<br></u> </p>
+
+
+        Le produit doit être retourné tel qu’il a été fourni par WONDAY et si
+        possible dans l’emballage d’origine et
+        sur emballé avec les documents attestant de l’achat (ticket de caisse, devis etc…). S’il y a détérioration
+        du
+        produit lors du
+        transport, les frais occasionnés ne seront pas pris en charge dans la garantie et seront facturés.<br>
+
+        Pour toute demande de renseignements ou d’utilisations produits, rendez-vous sur le site WONDAY ou sur notre
+        chaîne
+        YOUTUBE. <br>
+        Concernant les produits la famille « RESKAL », et selon le dépannage à fournir, la preuve d’achat et une
+        pièce
+        d’identité pourront vous être
+        demandées pour garantir la confidentialité du contenu des coffres. En cas d’intervention sur un coffre
+        contenant
+        des biens de
+        valeur, la présence du propriétaire sur le lieu d’intervention (uniquement à notre atelier de réparation)
+        sera
+        exigée.
+        </p>
+
+        <br><br>
+
+        <hr color="green">
+
+        <br><br>
+
+
+
+        <u> PRODUITS SOUS GARANTIE</u> <br>
+        Analyse de la panne par notre technicien.<br>
+        Selon le type de panne: <br>
+        1- Dépannage à distance du produit. <br>
+        2- Reprise du produit pour réparation : un numéro interne d’enregistrement de la panne vous sera transmis par
+        nos
+        techniciens
+        afin d’assurer la traçabilité du produit.<br>
+        3- Échange du produit. (des photos ou documents pourront vous être demandés par nos techniciens pour valider
+        l’acceptation
+        des échanges)<br><br>
+
+        <u>PRODUITS HORS GARANTIE</u><br>
+
+        Analyse de la panne par notre technnicien. <br>
+        1- Dépannage à distance du produit. <br>
+        2- Retour du produit pour diagnostic (à la charge du client) puis établissement d’un devis dans le cas où le
+        produit
+        est réparable.<br>
+        Le montant du devis est dû à l’avance et comprend les frais de transport retour du produit au client. Après
+        acceptation du
+        devis par le client et réception du règlement correspondant, un numéro interne d’enregistrement vous sera
+        transmis
+        par nos
+        techniciens afin d’assurer la traçabilité produit.<br><br>
+
+        <u>MISES A JOUR / UPDATES</u><br>
+        <p>Les mises à jour des produits sont gratuites et disponibles sur notre site internet : <a
+                href="http://www.reskal.com/sav/ " target="_blank">http://www.reskal.com/sav/</a>
+        </p> <br>
+
+
+    </section><br>
+
+
+
+
+
+
+
+
+    <div class="footer">
+
+        <footer>
+            <p> Parc d'Activités " Entre Dore et Allier"- 5 Allée des Acacias 63190 Lezoux-<a href="adv@wonday.com"
+                    style="color: rgb(142, 191, 66)">contact@wonday.com</a>-<a href="https://www.wonday.com/"
+                    style="color: #8ebf42" target="_blank">www.wonday.com</a>- SAS au capital de
+                2500000 € - RCS CLermont Ferrand 332 539 352 00093- NAF
+                4649Z- N°TVA FR34 332 539 352.</p>
+        </footer>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="upload.js"></script>
+
+</body>
+
+</html>

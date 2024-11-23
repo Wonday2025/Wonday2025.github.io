@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-weight: 520;
+
+}
+
+body {
+  font-family: Overlock, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image:url(./assets/img/diy-tools.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*  main {
+  width:90%;
+  background: #e5dfd9;
+  padding:80px;
+  border-radius: 54px;
+  margin:auto;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);;
+
+ } */
+
+ main {
+  width: 90%; /* Ajustez si nécessaire (ex. 80%, 1000px) */
+  max-width: 1400px; /* Limite maximale de largeur */
+  margin: 0 auto; /* Centrer la div */
+  padding: 100px;
+  background-color: #44bba9; 
+  border-radius: 40px;
+  border:2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Gérer les débordements horizontaux */
+ /*  border-style: outset; */
+  border-color: rgb(205, 238, 16);
+ 
+}
+ 
+
+
+#upper-paragraph {
+  font-size: 25px;
+
+}
+
+.logo {
+  width: 300px;
+  /* Redimensionner le logo à la largeur souhaitée */
+  height: auto;
+  /* Garder le ratio d'aspect de l'image */
+  margin-bottom: 25px;
+  /* Espacement sous le logo */
+}
+
+.iso {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background:#44bba9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+
+ /*  a supprimer pour un bandeau moins large */
+ width: 90%; /* Ajustez si nécessaire (ex. 80%, 1000px) */
+ max-width: 1400px; /* Limite maximale de largeur */
+ margin: 0 auto; /* Centrer la div */
+ padding: 100px;
+ 
+}
+
+
+
+
+
+h1 {
+  font-size: 3rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+}
+
+
+
+h2 {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 0.75rem;
+  /* taille texte mentions footer */
+}
+
+.warning {
+  font-size: 20px;
+}
+
+.form {
+  min-height: 500px;
+  /* évite de forcer les boîtes */
+  width: 90%;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+  width: 360px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  transition: 0.2s;
+  font-size: 20px;
+  background-color: #efe7e7;
+}
+
+input :required:invalid {
+  border: 2px solid red;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+button {
+  background: rgb(#393735);
+  color: #393735;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(220, 223, 215);
+  transition: background-color 0.5s;
+  /* Temps de transition pour la couleur de fond */
+  transition: color 0.2s;
+  /* Temps de transition pour la couleur du texte*/
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  /* Ombre du bouton */
+  font-size: large;
+}
+
+button:hover {
+  background:rgb(4, 98, 91);
+  color:#ccc
+  
+  /* Couleur du texte du bouton survolé rgb(134, 164, 73); */
+}
+
+button-supprimer {
+
+  order:1;
+}
+
+/* table {
+/*  /*  width: 100%; */
+/*   border-collapse: collapse; */
+/*   margin-bottom: 20px;
+  border-radius: 10px;
+  table-layout: auto;
+  width: 60%;
+  font-size: 0.9em;} */ 
+
+
+  .container-info{
+
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right:0.5rem;
+  }
+
+
+
+
+
+
+/* .product-table {
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: larger;
+    justify-content: space-around;
+    /* margin:0 100px auto; */
+  
+  
+ 
+/* Structure du tableau */
+#productTable {
+  width: 100%; /* Le tableau occupe toute la largeur disponible */
+ /*  border-collapse: collapse; */
+  margin-bottom: 1rem;
+  border-radius: 20px
+}
+
+#productTable th, 
+#productTable td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+  
+}
+
+#productTable thead th {
+  background-color: #167466; ; 
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+}
+
+
+/* Zones de saisie */
+input[type="text"], input[type="number"]  {
+  width: 90%; /* Ajuste les inputs pour qu'ils ne dépassent pas */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+ /*  resize: none;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5; */
+}  
+/* input[type="file" ]{
+  border-radius: 54px;
+  background-color: #ccc;
+  
+} */
+
+
+  
+
+
+
+
+
+th,
+td {
+  border: 1px solid #ccc;
+  /* padding: 10px; */
+  padding: 8px 12px;
+  text-align: center;
+  font-size: larger;
+  border-radius: 10px;
+}
+ 
+
+
+tr {
+  border-radius: 90px
+}
+
+
+
+
+
+
+th {
+  background: rgb(111, 159, 7);
+  /* border-radius: 10px;
+ */
+  color: #0a0a3a;
+
+}
+
+td button {
+  background: rgb(223, 220, 215);
+  color: #393735;
+  transition: background-color 0.5s;
+}
+
+td button:hover {
+  background: #bd1a2a;
+  color: #e5dfd9;
+}
+
+.text_f {
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+
+.info_sup {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form1 {
+  padding: 20px;
+}
+
+.form2 {
+  padding: 20px;
+}
+
+.form3 {
+  padding: 20px;
+}
+
+.rgpd {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+}
+
+
+.savw {
+  width: 100%; /* Ajustez si nécessaire (ex. 80%, 1000px) */
+  max-width: 1550px; /* Limite maximale de largeur */
+  margin: 0 auto; /* Centrer la div */
+  padding: 100px;
+  background:#bcd0cd ;
+  border-radius: 20px;
+
+}
+ 
+
+
+
+
+
+footer {
+  padding: 10px;
+}
+
+.container-info {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer {
+  margin-left: 70px;
+  font-size: large;
+  background-color: #bcd0cd;
+  border-radius: 20px;
+
+}
+
+
+/* input:invalid {
+  border-color: red;
+  background-color: #ffe6e6;
+} */
+
+/* Style normal des champs */
+/* input, textarea {
+  border: 1px solid #f8f7f7;
+  padding: 8px;
+} */
+
+/* Style des champs non remplis */
+/* input.error, textarea.error {
+  border: 2px solid red;
+  background-color: #fdd;
+}
+ */
+
+
+@media (max-width:1600px) {
+ h1 {
+    font-size:2.5rem;
+ }
+
+ .logo {
+    width: 250px;
+ }
+
+ .iso {
+
+    width : 90px;
+ }
+
+
+ } 
+ 
+ @media (max-width:1356px){
+    h1 {
+        font-size:2.3rem;
+     }
+    
+     .logo {
+        width: 210px;
+     }
+    
+     .iso {
+    
+        width : 75px;
+     }
+
+ }
+    
+
+
+     
+ @media (max-width:1256px){
+  h1 {
+      font-size:2rem;
+   }
+  
+   .logo {
+      width: 200px;
+   }
+  
+   .iso {
+  
+      width : 70px;
+   }
+
+}
+
+@media (max-width:1134px){
+  h1 {
+      font-size:1.8rem;
+   }
+  
+   .logo {
+      width: 180px;
+   }
+  
+   .iso {
+  
+      width : 60px;
+   }
+
+}
+    
+
+@media (max-width:1032px){
+  h1 {
+      font-size:1.6rem;
+   }
+  
+   .logo {
+      width: 167px;
+   }
+  
+   .iso {
+  
+      width : 55px;
+   }
+
+}
+
+@media (max-width:976px){
+  h1 {
+      font-size:1.4rem;
+   }
+  
+   .logo {
+      width: 162px;
+   }
+  
+   .iso {
+  
+      width : 55px;
+   }
+
+}
+ 
