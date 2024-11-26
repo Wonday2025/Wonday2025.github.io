@@ -34,7 +34,7 @@ body {
  } */
 
  main {
-  width: 90%; /* Ajustez si nécessaire (ex. 80%, 1000px) */
+  width: 90%; /* à ajuster si nécessaire (ex. 80%, 1000px) */
   max-width: 1400px; /* Limite maximale de largeur */
   margin: 0 auto; /* Centrer la div */
   padding: 100px;
@@ -50,7 +50,7 @@ body {
  
 
 
-#upper-paragraph {
+p {
   font-size: 25px;
 
 }
@@ -83,7 +83,7 @@ body {
   border-radius: 60px;
 
  /*  a supprimer pour un bandeau moins large */
- width: 90%; /* Ajustez si nécessaire (ex. 80%, 1000px) */
+ width: 90%; /* Ajuster si nécessaire (ex. 80%, 1000px) */
  max-width: 1400px; /* Limite maximale de largeur */
  margin: 0 auto; /* Centrer la div */
  padding: 100px;
@@ -194,16 +194,6 @@ button-supprimer {
   order:1;
 }
 
-/* table {
-/*  /*  width: 100%; */
-/*   border-collapse: collapse; */
-/*   margin-bottom: 20px;
-  border-radius: 10px;
-  table-layout: auto;
-  width: 60%;
-  font-size: 0.9em;} */ 
-
-
   .container-info{
 
     width:100%;
@@ -215,20 +205,6 @@ button-supprimer {
 
 
 
-
-
-
-/* .product-table {
-
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    font-size: larger;
-    justify-content: space-around;
-    /* margin:0 100px auto; */
-  
-  
- 
 /* Structure du tableau */
 #productTable {
   width: 100%; /* Le tableau occupe toute la largeur disponible */
@@ -448,15 +424,15 @@ footer {
   h1 {
       font-size:2rem;
    }
-  
    .logo {
-      width: 200px;
-   }
+    width: 200px;
+ }
+
+ .iso {
+
+    width : 70px;
+ }
   
-   .iso {
-  
-      width : 70px;
-   }
 
 }
 
@@ -474,9 +450,11 @@ footer {
       width : 60px;
    }
 
-}
-    
+}  
+  
 
+    
+/* premier break front */
 @media (max-width:1032px){
   h1 {
       font-size:1.6rem;
@@ -490,6 +468,35 @@ footer {
   
       width : 55px;
    }
+   p{
+    font-size: 22px;
+   }
+
+   h2 {
+    font-size: 1.5rem;
+   }
+
+  
+  
+   
+}
+@media (max-width:1000px){
+  .container-info{
+width : 100%;
+display: inline-block;
+  } 
+#productTable{
+  width : 100%;
+} 
+
+main {
+  width : 80%;
+  width: 80%; /* Ajuster si nécessaire  */
+  max-width: 1300px; /* Limite maximale de largeur */
+  margin: 0 auto; /* Centrer la div */
+  padding: 90px;
+}
+
 
 }
 
@@ -506,6 +513,57 @@ footer {
   
       width : 55px;
    }
+   p{
+    font-size: 20px;
+   }
+
+   h2 {
+    font-size: 1.3rem;}
+
+}
+
+@media (max-width:901px){
+  h1 {
+      font-size:1.3rem;
+   }
+  
+   .logo {
+      width: 159px;
+   }
+  
+   .iso {
+  
+      width : 53px;
+   }
+   p{
+    font-size: 18px;
+   }
+
+   h2 {
+    font-size: 1.2rem;}
+
+}
+
+@media (max-width:871px){
+  h1 {
+      font-size:1.2rem;
+   }
+  
+   .logo {
+      width: 155px;
+   }
+  
+   .iso {
+  
+      width : 50px;
+   }
+   p{
+    font-size: 18px;
+   };
+   .header{
+    max-width: min-content;
+   }
 
 }
  
+
