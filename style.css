@@ -114,12 +114,12 @@ h2 {
 
 h3 {
   font-weight: 200;
-  font-size: 0.75rem;
+  font-size: 0.80rem;
   /* taille texte mentions footer */
 }
 
 .warning {
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .form {
@@ -337,7 +337,7 @@ td button:hover {
   padding: 100px;
   background:#bcd0cd ;
   border-radius: 20px;
-
+ font: size 0.75em; ;
 }
  
 
