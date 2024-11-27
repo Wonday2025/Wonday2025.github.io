@@ -386,11 +386,11 @@ footer {
 
 @media (max-width:1600px) {
  h1 {
-    font: size 2.5rem;
+    font-size: 2.5rem;
  }
 
  h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 
  }
 
@@ -413,12 +413,43 @@ footer {
 
 } 
 
+
+@media (max-width:1408px) {
+  h1 {
+     font-size: 2.2rem;
+  }
+ 
+  h2 {
+   font-size: 1.8rem;
+ 
+  }
+ 
+  p {
+   font-size: 21px;
+  }
+ 
+  .logo {
+     width: 248px;
+  }
+ 
+  .iso {
+    width : 90px;
+   }
+ 
+ 
+  .savw {
+   font-size:0.2rem;
+  }
+ 
+ } 
+ 
+
  
 
  
  @media (max-width:1356px){
     h1 {
-        font-size:2.3rem;
+        font-size:2.1rem;
      }
      h2{
       font-size: 1.3rem;
@@ -484,6 +515,14 @@ footer {
       width : 60px;
    }
 
+   .container-info{
+    width : 100%;
+    display: inline-block;
+      } 
+    #productTable{
+      width : 100%;
+    }
+
 }  
   
 
@@ -498,7 +537,7 @@ footer {
     font-size: 1rem;
    }
    p {
-    font-size: 17px;
+    font-size: 18px;
    }
   
    .logo {
@@ -510,11 +549,19 @@ footer {
       width : 55px;
    }
 
+   .container-info{
+    width : 100%;
+    display: inline-block;
+      } 
+    #productTable{
+      width : 100%;
+    }
 
-  
+
+  }
+   
   
    
-}
 @media (max-width:1000px){
   .container-info{
 width : 100%;
@@ -523,6 +570,10 @@ display: inline-block;
 #productTable{
   width : 100%;
 } 
+p {
+  font-size: 17px;
+}
+}
 
 main {
   width : 80%;
@@ -533,7 +584,7 @@ main {
 }
 
 
-}
+
 
 @media (max-width:976px){
   h1 {
@@ -549,7 +600,7 @@ main {
       width : 55px;
    }
    p{
-    font-size: 20px;
+    font-size: 17px;
    }
 
    h2 {
@@ -576,16 +627,20 @@ main {
 
    h2 {
     font-size: 1.2rem;}
+  /*   .header{
+      max-width: min-content;
+      padding: 80px;
+     } */
 
 }
 
-@media (max-width:871px){
+@media (max-width:872px){
   h1 {
-      font-size:1.2rem;
+      font-size:1rem;
    }
   
    .logo {
-      width: 155px;
+      width: 130px;
    }
   
    .iso {
@@ -594,9 +649,44 @@ main {
    }
    p{
     font-size: 18px;
-   };
+   }
    .header{
     max-width: min-content;
+    padding: 50px;
+   }
+   main {
+    max-width: 69%;
+    padding:50px;
+   }
+
+}
+
+
+
+
+@media (max-width:796px){
+  h1 {
+      font-size:1rem;
+   }
+  
+   .logo {
+      width: 130px;
+   }
+  
+   .iso {
+  
+      width : 50px;
+   }
+   p{
+    font-size: 17px;
+   }
+   .header{
+    max-width: min-content;
+    padding: 50px;
+   }
+   main {
+    max-width: 69%;
+    padding:50px;
    }
 
 }
