@@ -383,10 +383,11 @@ td button:hover {
 
 
 .savw {
-  width: 100%; /* Ajustez si nécessaire (ex. 80%, 1000px) */
+  width: 90%; /* Ajustez si nécessaire (ex. 80%, 1000px) */
   max-width: 1550px; /* Limite maximale de largeur */
   margin: 0 auto; /* Centrer la div */
   padding: 100px;
+  
   background:#bcd0cd ;
   border-radius: 20px;
   font-size:10px ;
@@ -416,6 +417,7 @@ td button:hover {
   background-color: #bcd0cd;
   border-radius: 20px;
   margin: 0 auto;
+  width: 90%;
 
 }
 
