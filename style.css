@@ -264,7 +264,9 @@ button-supprimer {
 input[type="text"],
 input[type="tel"],
 input[type="email"],
-input[type="date"] {
+input[type="date"], 
+input[type="number"]
+{
     background-color: rgb(220, 223, 215) ; /* Couleur de l'arrière-plan */
     color: #333; /* Couleur du texte */
     border: 1px solid #ccc; /* Bordure légère */
@@ -279,7 +281,8 @@ input[type="date"] {
 input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
-input[type="date"]:focus {
+input[type="date"]:focus,
+input[type="number"]:focus {
     background-color: #c3d2ce; /* Couleur plus claire */
     border-color: #5d7571; /* Bordure verte */
     outline: none; /* Supprime le contour par défaut */
@@ -378,8 +381,10 @@ td button:hover {
   display: flex;
   align-items: baseline;
   justify-content: center;
-
+  font-size: larger;
 }
+  
+
 
 
 .savw {
