@@ -6,10 +6,10 @@
   margin: 10px;
   padding: 0;
   box-sizing: border-box;
-
   font-weight: 520;
-
 }
+
+
 
 body {
   font-family: Overlock, sans-serif;
@@ -139,10 +139,10 @@ h3 {
   font-size: 20px;
 } */
 
-label {
+label { /*titre champs*/
   display: block;
   margin-top: 15px;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 input[type="text"],
@@ -226,37 +226,46 @@ button-supprimer {
   border-radius: 20px
 }
 
-#productTable th, 
-#productTable td {
-  border: 1px solid #ccc;
-  padding: 0.75rem;
-  /* text-align: left; */
+/* #productTable th, 
+#productTable td { */
+ /*  border: 1px solid #ccc;
+  padding: 0.75rem; */
+  /* text-align: left; }*/
 
-}
+
 
 #productTable  th {
   background-color: #167466; ; 
   color: #fff;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 1px;
 }
-/* input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-} */
 
-/* Zones de saisie */
-/* input[type="text"], input[type="number"]  {
-  width: 90%; /* Ajuste les inputs pour qu'ils ne dépassent pas */
-  /* padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 30px; */
- /*  box-sizing: border-box; } */
- 
+.product-table table {
+  width: 100%; /* Prend toute la largeur disponible */
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+  border: 2px solid #006666; /* Couleur de la bordure */
+  padding: 10px;
+  text-align: center; /* Centrer horizontalement le texte dans les cellules */
+  
+}
+
+/* Ajuster la largeur des colonnes */
+.product-table th:nth-child(1), .product-table td:nth-child(1) {
+  width: 45%; /* Référence Article */
+}
+.product-table:nth-child(2), .product-table td:nth-child(2) {
+  width: 10%; /* Quantité */
+}
+.product-table th:nth-child(3), .product-table td:nth-child(3) {
+  width: 45%; /* Remarques */
+}
+
+
  
 
 /* Couleurs des champs par défaut */
