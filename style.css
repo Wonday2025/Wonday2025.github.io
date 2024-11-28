@@ -280,7 +280,7 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
 input[type="date"]:focus {
-    background-color: #d4f0fc; /* Couleur plus claire */
+    background-color: #c3d2ce; /* Couleur plus claire */
     border-color: #5d7571; /* Bordure verte */
     outline: none; /* Supprime le contour par défaut */
 }
