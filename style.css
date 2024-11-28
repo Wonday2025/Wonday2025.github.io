@@ -76,7 +76,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
   background:#44bba9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -84,9 +84,9 @@ p {
 
  /*  a supprimer pour un bandeau moins large */
  width: 90%; /* Ajuster si nécessaire (ex. 80%, 1000px) */
- max-width: 1400px; /* Limite maximale de largeur */
- margin: 0 auto; /* Centrer la div */
- padding: 100px;
+ /* max-width: 1400px; */ /* Limite maximale de largeur */
+/*  margin: 0 auto; */ /* Centrer la div */
+ padding: 80px;
  
 }
 
@@ -128,11 +128,17 @@ h3 {
   width: 90%;
 }
 
-label {
+/* label {
   display: block;
   margin: 15px 0 5px;
   font-weight: bold;
   font-size: 20px;
+} */
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
 }
 
 input[type="text"],
@@ -182,6 +188,8 @@ button {
   font-size: large;
 }
 
+
+
 button:hover {
   background:rgb(4, 98, 91);
   color:#ccc
@@ -194,14 +202,32 @@ button-supprimer {
   order:1;
 }
 
-  .container-info{
+  /* .container-info{
 
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
+    width:100%; */
+   /*  margin-left: auto;
+    margin-right: auto; */
+/*     margin: 0 auto;
     padding-left: 0.5rem;
     padding-right:0.5rem;
+  } */
+
+  .container-info {
+    max-width: 800px;
+    margin: 0 auto;
+   /*  background-color: #c5d3cd; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(11, 42, 24);
+    
+    
   }
+
+  /* Espacement entre les formulaires */
+.form1, .form2 {
+  margin-bottom: 20px;
+}
 
 
 
@@ -209,7 +235,8 @@ button-supprimer {
 #productTable {
   width: 100%; /* Le tableau occupe toute la largeur disponible */
  /*  border-collapse: collapse; */
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  margin: 0 auto;
   border-radius: 20px
 }
 
@@ -227,31 +254,59 @@ button-supprimer {
   text-align: center;
   border-radius: 15px;
 }
-
-
-/* Zones de saisie */
-input[type="text"], input[type="number"]  {
-  width: 90%; /* Ajuste les inputs pour qu'ils ne dépassent pas */
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  box-sizing: border-box;
- /*  resize: none;
-  overflow: hidden;
-  font-family: inherit;
+/* input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
   font-size: 1rem;
-  line-height: 1.5; */
-}  
-/* input[type="file" ]{
-  border-radius: 54px;
-  background-color: #ccc;
-  
 } */
 
+/* Zones de saisie */
+/* input[type="text"], input[type="number"]  {
+  width: 90%; /* Ajuste les inputs pour qu'ils ne dépassent pas */
+  /* padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 30px; */
+ /*  box-sizing: border-box; } */
+ 
+ 
 
-  
+/* Couleurs des champs par défaut */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+    background-color: rgb(220, 223, 215) ; /* Couleur de l'arrière-plan */
+    color: #333; /* Couleur du texte */
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne */
+    font-size: 1rem; /* Taille de police */
+    width: 100%; /* Champs extensibles en largeur */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Couleur des champs au focus */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    background-color: #d4f0fc; /* Couleur plus claire */
+    border-color: #5d7571; /* Bordure verte */
+    outline: none; /* Supprime le contour par défaut */
+}
+
+/* Pour les champs obligatoires */
+/* input[required] {
+    border: 1px solid #ff6347;} /* Bordure rouge par défaut */
 
 
+/* Animation lors du focus */
+input:focus {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
 
 
 
@@ -273,9 +328,6 @@ tr {
 
 
 
-
-
-
 th {
   background: rgb(111, 159, 7);
   /* border-radius: 10px;
@@ -294,6 +346,16 @@ td button:hover {
   background: #bd1a2a;
   color: #e5dfd9;
 }
+  
+
+
+
+
+
+
+
+
+
 
 .text_f {
   padding: 10px;
@@ -304,10 +366,13 @@ td button:hover {
 
 .info_sup {
   width: 80%;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
-  background: #fff;
+  background:rgb(8, 158, 148);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  border: 2px;
+  border:  #333;
 }
 
 .form1 {
@@ -349,39 +414,26 @@ footer {
   padding: 10px;
 }
 
-.container-info {
+/* .container-info {
 
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
+} */
+
+
 
 .footer {
-  margin-left: 70px;
+
   font: size 2.5em;;
   background-color: #bcd0cd;
   border-radius: 20px;
+  margin: 0 auto;
 
 }
 
 
-/* input:invalid {
-  border-color: red;
-  background-color: #ffe6e6;
-} */
 
-/* Style normal des champs */
-/* input, textarea {
-  border: 1px solid #f8f7f7;
-  padding: 8px;
-} */
-
-/* Style des champs non remplis */
-/* input.error, textarea.error {
-  border: 2px solid red;
-  background-color: #fdd;
-}
- */
 
 
 @media (max-width:1600px) {
@@ -410,8 +462,32 @@ footer {
  .savw {
   font-size:0.2rem;
  }
+ button {
+      
+  border: none;
+  padding: 9px 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size:medium;
 
+}
+.header{
+  width: 90%;
+  padding: 90px;
 } 
+
+}
+
+@media(max-width:1444px) {
+  h1 {
+    font-size: 2.3rem; ;
+  }
+  .header{
+    width: 90%;
+    padding: 80px;
+  } 
+}
 
 
 @media (max-width:1408px) {
@@ -440,11 +516,24 @@ footer {
   .savw {
    font-size:0.2rem;
   }
- 
+  button {
+      
+    border: none;
+    padding: 9px 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size:medium;
+  
+  }
+  .header{
+    width: 90%;
+    padding: 70px;
+  } 
  } 
  
 
- 
+
 
  
  @media (max-width:1356px){
@@ -466,13 +555,30 @@ footer {
     
         width : 75px;
      }
+     button {
+      
+      border: none;
+      padding: 10px 11px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size:medium;
+    
+    }
+    .header{
+      width: 90%;
+      padding: 60px;
+    } 
+  }
 
- }
+ 
+    
+
     
 
 
      
- @media (max-width:1256px){
+ @media (max-width:1270px){
   h1 {
       font-size:2rem;
    }
@@ -491,13 +597,43 @@ footer {
 
     width : 70px;
  }
-  
+ button {
+      
+  border: none;
+  padding: 8px 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size:medium;
 
+
+} 
+.header{
+  width: 90%;
+  padding: 50px;
+} 
+ }
+
+ @media (max-width:1221px){
+  h1 {
+      font-size: 1.9rem;
+   }
+  
+  }
+
+
+@media (max-width: 1195px){
+  h1 {
+    font-size:1.7rem;
+  }
+  
 }
 
-@media (max-width:1134px){
+
+
+@media (max-width:1141px){
   h1 {
-      font-size:1.8rem;
+      font-size:1.7rem;
    }
    h2{
     font-size: 1.1rem;
@@ -507,7 +643,7 @@ footer {
    }
   
    .logo {
-      width: 180px;
+      width: 170px;
    }
   
    .iso {
@@ -522,13 +658,28 @@ footer {
     #productTable{
       width : 100%;
     }
+    
+    
+    button {
+      
+      border: none;
+      padding: 7px 17px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size:smaller;
+    
+    }
+    .header{
+      width: 90%;
+      padding: 40px;
+    } 
 
 }  
-  
 
     
 /* premier break front */
-@media (max-width:1032px){
+@media (max-width:1104px){
   h1 {
       font-size:1.6rem;
    }
@@ -556,13 +707,31 @@ footer {
     #productTable{
       width : 100%;
     }
+    button {
+      
+      border: none;
+      padding: 7px 17px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size:smaller;
+    
+    }
+    .header{
+      width: 80%;
+      padding: 40px;
+    } 
 
+    
 
   }
    
   
    
-@media (max-width:1000px){
+@media (max-width:1099px){
+  h1 {
+    font-size:1.5rem;
+ }
   .container-info{
 width : 100%;
 display: inline-block;
@@ -573,7 +742,7 @@ display: inline-block;
 p {
   font-size: 17px;
 }
-}
+
 
 main {
   width : 80%;
@@ -582,17 +751,17 @@ main {
   margin: 0 auto; /* Centrer la div */
   padding: 90px;
 }
+}
 
 
 
-
-@media (max-width:976px){
+@media (max-width:1027px){
   h1 {
       font-size:1.4rem;
    }
   
    .logo {
-      width: 162px;
+      width: 159px;
    }
   
    .iso {
@@ -606,23 +775,32 @@ main {
    h2 {
     font-size: 1.3rem;}
 
+    .header{
+      width: 80%;
+      padding: 50px;
+     }
+     main {
+      max-width: 80%;
+      padding:50px;
+     }
+
 }
 
-@media (max-width:901px){
+@media (max-width:990px){
   h1 {
       font-size:1.3rem;
    }
   
    .logo {
-      width: 159px;
+      width: 156px;
    }
   
    .iso {
   
-      width : 53px;
+      width : 50px;
    }
    p{
-    font-size: 18px;
+    font-size: 16px;
    }
 
    h2 {
@@ -631,10 +809,19 @@ main {
       max-width: min-content;
       padding: 80px;
      } */
-
+     button {
+      
+      border: none;
+      padding: 6px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size:smaller;
+    
+    }
 }
 
-@media (max-width:872px){
+@media (max-width:953px){
   h1 {
       font-size:1rem;
    }
@@ -651,11 +838,11 @@ main {
     font-size: 18px;
    }
    .header{
-    max-width: min-content;
-    padding: 50px;
+    width: 80%;
+    padding: 40px;
    }
    main {
-    max-width: 69%;
+    max-width: 80%;
     padding:50px;
    }
 
@@ -681,14 +868,73 @@ main {
     font-size: 17px;
    }
    .header{
-    max-width: min-content;
-    padding: 50px;
+    width: 80%;
+    padding: 40px;
    }
    main {
-    max-width: 69%;
+    max-width: 80%;
+    padding:50px;
+   }
+   input {
+    font-size: 0.9rem;
+    padding: 8px;
+}
+
+}
+
+
+
+
+@media (max-width:692px){
+  h1 {
+      font-size:0.9rem;
+   }
+  
+   .logo {
+      width: 127px;
+   }
+  
+   .iso {
+  
+      width : 47px;
+   }
+   p{
+    font-size: 17px;
+   }
+   .header{
+    width: 80%;
+    padding: 30px;
+   }
+   main {
+    max-width: 80%;
     padding:50px;
    }
 
+}
+
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  .container-info {
+      padding: 15px;
+  }
+  h1{
+    font-size: 0.5rem;
+  }
+  h2 {
+      font-size: 1rem;
+  }
+
+  label {
+      font-size: 0.9rem;
+  }
+
+  input {
+      font-size: 0.85rem;
+      padding: 6px;
+  }
 }
  
 
