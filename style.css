@@ -126,11 +126,13 @@ h3 {
   font-size: 10px;
 }
 
-.form {
+
+/* évite de forcer les boîtes */
+/* .form {
   min-height: 500px;
-  /* évite de forcer les boîtes */
   width: 90%;
-}
+} */
+  
 
 /* label {
   display: block;
@@ -206,15 +208,7 @@ button-supprimer {
   order:1;
 }
 
-  /* .container-info{
 
-    width:100%; */
-   /*  margin-left: auto;
-    margin-right: auto; */
-/*     margin: 0 auto;
-    padding-left: 0.5rem;
-    padding-right:0.5rem;
-  }
 
 
 
@@ -226,11 +220,7 @@ button-supprimer {
   border-radius: 20px
 }
 
-/* #productTable th, 
-#productTable td { */
- /*  border: 1px solid #ccc;
-  padding: 0.75rem; */
-  /* text-align: left; }*/
+
 
 
 
@@ -257,6 +247,7 @@ button-supprimer {
 /* Ajuster la largeur des colonnes */
 .product-table th:nth-child(1), .product-table td:nth-child(1) {
   width: 45%; /* Référence Article */
+  
 }
 .product-table:nth-child(2), .product-table td:nth-child(2) {
   width: 10%; /* Quantité */
@@ -281,7 +272,7 @@ input[type="number"]
     border-radius: 10px; /* Coins arrondis */
     padding: 10px; /* Espacement interne */
     font-size: 1rem; /* Taille de police */
-    width: 100%; /* Champs extensibles en largeur */
+    width: 90%; /* Champs extensibles en largeur */
     box-sizing: border-box; /* Inclut le padding dans la largeur totale */
 }
 
