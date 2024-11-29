@@ -117,4 +117,4 @@ document.addEventListener('DOMContentLoaded', function() {
       phoneNumberInput.placeholder = countryCodeSelect.value + " XXXXXXX";
     });
  */
- 
+ console.log(test);

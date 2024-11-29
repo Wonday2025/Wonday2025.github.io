@@ -41,7 +41,7 @@ body {
   padding: 100px;
   background-color: #ccd1d1; 
   border-radius: 40px;
-  border:2px;
+  border:10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-x: auto; 
   border-color: rgb(26, 27, 22);}
@@ -85,10 +85,11 @@ p {
   border-radius: 60px;
 
  /*  a supprimer pour un bandeau moins large */
- width: 80%; /* Ajuster si nécessaire (ex. 80%, 1000px) */
+  /* Ajuster si nécessaire (ex. 80%, 1000px) */
  /* max-width: 1400px; */ /* Limite maximale de largeur */
 /*  margin: 0 auto; */ /* Centrer la div */
  padding: 80px;
+ width: 80%;
  
 }
 
@@ -362,7 +363,7 @@ td button:hover {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  background:rgb(8, 158, 148);
+  /* background:#006666 */;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   border: 2px;
