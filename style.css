@@ -80,7 +80,7 @@ p {
   align-items: center;
   margin: 0 auto;
   padding: 20px;
-  background:#44bba9;
+  background:#37bcb3;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 60px;
 
@@ -202,8 +202,8 @@ button {
 
 
 button:hover {
-  background:rgb(4, 98, 91);
-  color:#ccc
+  background:#37bcb3;
+  color:#151313
   
   /* Couleur du texte du bouton survolé rgb(134, 164, 73); */
 }
@@ -230,8 +230,8 @@ button-supprimer {
 
 
 #productTable  th {
-  background-color: #167466; ; 
-  color: #fff;
+  background-color: #37bcb3 ; 
+  color: #1f1c1c;
   text-align: center;
   border-radius: 1px;
 }
@@ -338,8 +338,8 @@ td button {
 }
 
 td button:hover {
-  background: #bd1a2a;
-  color: #e5dfd9;
+  background: #ef332f;
+  color: #dad7d4;
 }
   
 
