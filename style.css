@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: 520;
+  text-decoration: none;
 }
 
 
@@ -272,8 +273,8 @@ input[type="number"]
     border-radius: 10px; /* Coins arrondis */
     padding: 10px; /* Espacement interne */
     font-size: 1rem; /* Taille de police */
-    width: 90%; /* Champs extensibles en largeur */
-    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+    width: 90%; /* LARGEUR CHAMPS */
+    box-sizing: border-box;  /* Inclut le padding dans la largeur totale */
 }
 
 /* Couleur des champs au focus */
