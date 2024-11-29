@@ -109,6 +109,12 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.height = (element.scrollHeight) + "px"; // Ajuster à la hauteur du contenu
         }
     }); */
-
-
-
+   
+/*    const countryCodeSelect = document.getElementById("country-code");
+    const phoneNumberInput = document.getElementById("phone-number");
+  
+    countryCodeSelect.addEventListener("change", () => {
+      phoneNumberInput.placeholder = countryCodeSelect.value + " XXXXXXX";
+    });
+ */
+ 

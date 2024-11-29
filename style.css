@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Permanent+Marker&display=swap");
 
+/* html{
+  font-size: 62.5%;} valeur de ref modifiée pour que 1rem=10px*/
+
 * {
   margin: 10px;
   padding: 0;
@@ -23,31 +26,29 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-}
-/*  main {
-  width:90%;
-  background: #e5dfd9;
-  padding:80px;
-  border-radius: 54px;
-  margin:auto;
-  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);;
+} 
 
- } */
 
- main {
-  width: 90%; /* à ajuster si nécessaire (ex. 80%, 1000px) */
-  max-width: 1400px; /* Limite maximale de largeur */
-  margin: 0 auto; /* Centrer la div */
+
+
+ 
+  /*width: 90%; à ajuster si nécessaire (ex. 80%, 1000px) */
+  main {
+ /*  height: 100vh; */
+  width: 90%;
+  max-width: 1400px; 
+  margin: 0 auto; 
   padding: 100px;
-  background-color: #44bba9; 
+  background-color: #ccd1d1; 
   border-radius: 40px;
   border:2px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-x: auto; /* Gérer les débordements horizontaux */
- /*  border-style: outset; */
-  border-color: rgb(205, 238, 16);
+  overflow-x: auto; 
+  border-color: rgb(26, 27, 22);}
  
-}
+
+
+
  
 
 
@@ -72,6 +73,7 @@ p {
 }
 
 .header {
+
   display: flex;
   align-content: center;
   justify-content: space-evenly;
@@ -91,6 +93,7 @@ p {
 }
 
 .container-info {
+ 
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
   /* border-radius:10px */ ;
 }
@@ -124,7 +127,7 @@ h3 {
 }
 
 .warning {
-  font-size: 10px;
+  font-size:10px;
 }
 
 
@@ -394,7 +397,7 @@ td button:hover {
   margin: 0 auto; /* Centrer la div */
   padding: 100px;
   
-  background:#bcd0cd ;
+  background: #ccd1d1;
   border-radius: 20px;
   font-size:10px ;
 }
@@ -420,7 +423,8 @@ td button:hover {
 .footer {
 
   font-size: 10px;
-  background-color: #bcd0cd;
+  /* background-color: #bcd0cd; */
+  background-color:#ccd1d1 ;
   border-radius: 20px;
   margin: 0 auto;
   width: 90%;
